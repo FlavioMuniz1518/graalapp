@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+  
+{% block title %}Profile{% endblock %}
+  
+{% block content %}
+<h2 class="h1" style="text-align: center;">Seus dados</h2>
+<div>
+    
+    <table>
+        <tr>
+            <td class="h1" style="text-align: center;">Departamento:</td>
+            <td class="h1" style="text-align: center;">{{ account['departamento'] }}</td>
+        </tr>
+  <tr>
+            <td class="h1" >Usuário:</td>
+            <td class="h1" style="text-align: center;">{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td class="h1" >Email:</td>
+            <td class="h1" style="text-align: center;">{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
